@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFinance | Lançamentos</title>
+    <link rel="shortcut icon" type="imagex/png" href="../src/img/icone-logo.png">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        body{background-color: #d9d9d9;}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Menu lateral fixo --> 
+        <nav class="sidebar">
+            <ul>
+                <li data-tippy-content="Dashboard"><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
+
+                <li data-tippy-content="Lançamentos" class="icone-ativo"><a href="lançamentos.html"> <i class="fa-solid fa-list"></i></a></li>
+
+                <li data-tippy-content="Relatórios"><i class="fa-solid fa-chart-simple"></i></li>
+                <li data-tippy-content="Carteira"><i class="fa-solid fa-wallet"></i></li>
+                <li data-tippy-content="Opções"><i class="fa-solid fa-ellipsis"></i></li>
+            </ul> 
+        </nav>
+            
+            <h1 id="la" class="margin-top">Lançamentos</h1>
+            <p id="saud">Boa Tarde, Calabreso! <i class="fa-solid fa-circle-user"></i></p> 
+            
+            <div id="tb">
+               
+                <table>
+            
+                        <tr>
+                            <th class="cb">Tipo</th>
+                            <th class="cb">Data</th>
+                            <th class="cb">Descrição</th>
+                            <th class="cb">Categoria</th>
+                            <th class="cb">Conta</th>
+                            <th class="cb">Valor</th>
+                            <th class="cb">Ações</th>
+                        </tr>
+                        
+                        <tr id="al">
+                            <td class="ct"> <span class="cr2" ><i class="fa-solid fa-arrow-trend-up "></span></i></td>
+                            <td class="ct"><span  class="TV">16/09</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Nubank</span></td>
+                            <td class="ct"><span class="TV">R$300</span></td>
+                            <td class="ct"><span class="TV"><span class="ac"><i class="fa-solid fa-paperclip"></i><i class="fa-regular fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="ct"><span class="cr3"><i class="fa-solid fa-arrow-trend-down"></span></i></td>
+                            <td class="ct"><span class="TV">16/09</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Nubank</span></td>
+                            <td class="ct"><span class="TV">R$300</span></td>                         
+                            <td class="ct"><span class="TV"><span class="ac"><i class="fa-solid fa-paperclip"></i><i class="fa-regular fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span></span></td>
+                        </tr>
+                        
+                        <tr> 
+                            <td class="ct"><span class="cr3"><i class="fa-solid fa-arrow-trend-down"></i></span></td>
+                            <td class="ct"><span class="TV">16/09</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Nubank</span></td>
+                            <td class="ct"><span class="TV">R$300</span></td>             
+                            <td class="ct"><span class="TV"><span class="ac"><i class="fa-solid fa-paperclip"></i><i class="fa-regular fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span></span></td>
+                        </tr> 
+                      
+                        <tr>
+                            <td class="ct"><span class="cr2"><i class="fa-solid fa-arrow-trend-up"></i></span></td>
+                            <td class="ct"><span class="TV">16/09</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Nubank</span></td>
+                            <td class="ct"><span class="TV">R$300</span></td>                            
+                            <td class="ct"><span class="TV"><span class="ac"><i class="fa-solid fa-paperclip"></i><i class="fa-regular fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span></span></td>
+                        </tr>         
+                       
+                        <tr>
+                            <td class="ct"><span class="cr2"><i class="fa-solid fa-arrow-trend-up"></i></span></td>
+                            <td class="ct"><span class="TV">16/09</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Exemplo</span></td>
+                            <td class="ct"><span class="TV">Nubank</span></td>
+                            <td class="ct"><span class="TV">R$300</span></td>   
+                            <td class="ct"><span class="TV"><span class="ac"><i class="fa-solid fa-paperclip"></i><i class="fa-regular fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span></span></td>
+                        </tr>           
+                        
+            
+                </table>
+
+
+            
+            </div>
+
+                <!-- Botão Novo Lançamento -->
+    <a href="javascript:void(0);" class="novo-lancamento" onclick="openModal('Novo Lançamento')">
+        <i class="fas fa-plus"></i> Novo Lançamento
+    </a>
+
+    <!-- Opções de Lançamento -->
+    <div class="opcoes">
+        <div class="opcao" id="btn-receita" onclick="openModal('Adicionar Receita')"><i class="fa-solid fa-arrow-trend-up"></i> Receita</div>
+        <div class="opcao" id="btn-despesa" onclick="openModal('Adicionar Despesa')"><i class="fa-solid fa-arrow-trend-down"></i> Despesa</div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Adicionar Lançamento</h2>
+            <p id="modal-description">Por favor, preencha as informações necessárias.</p>
+            <!-- Formulário -->
+            <form id="form-lancamento">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" class="full-width" required>
+            
+                <div class="two-columns">
+                    <div class="column">
+                        <label for="valor">Valor:</label>
+                        <input type="text" id="valor" placeholder="R$0,00" name="valor" required oninput="formatarValor(this)">
+                    </div>
+                    <div class="column">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                </div>
+            
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="saude">Saúde</option>
+                    <option value="educacao">Educação</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="outros">Outros</option>
+                </select>
+            
+                <br><br>
+                <button class="submit" type="submit" onclick="confirmarAcao()">Salvar Lançamento</button>
+            </form>
+
+        </div>
+    </div>
+        
+    <script type="text/javascript" src="../js/code.js"></script>
+</body>
+</html>
