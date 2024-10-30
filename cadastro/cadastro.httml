@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WebFinance | Cadastro</title>
+  <link rel="shortcut icon" type="image/png" href="../src/img/icone-logo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="../src/img/logo-horizontal-fundobranco.png" alt="Logo">
+    
+    <h2>Cadastro</h2>
+    
+    <input type="text" placeholder="Nome" required>
+    <input type="email" placeholder="E-mail" required>
+    <input type="password" placeholder="Senha" required>
+    
+    <button>Cadastrar</button>
+    
+    <a href="../login/login.html">Já tem uma conta? Login</a> <!-- Redireciona para a tela de login -->
+  </div>
+
+</body>
+</html>
